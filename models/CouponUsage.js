@@ -32,7 +32,7 @@ const couponUsageSchema = new mongoose.Schema(
     },
 
     course: { type: mongoose.Schema.Types.ObjectId, ref: "Course", default: null },
-    transactionId: { type: String, trim: true, index: true },
+    transactionId: { type: String, trim: true  },
     originalAmount: { type: Number, default: 0, min: 0 },
     finalAmount: { type: Number, default: 0, min: 0 },
     discountAmount: {
